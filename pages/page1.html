@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="site-navigation">
+          <li>
+            <a href="../index.html">На головну</a>
+          </li>
+          <li>
+            <a href="#registration">Реєстрація</a>
+          </li>
+          <li><a href="#contact-us">Зворотній зв'язок</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="registration">
+        <h1>Реєстрація користувача</h1>
+        <form>
+          <label for="first-name">Ім'я</label>
+          <input type="text" id="first-name" name="first-name" />
+          <label for="second-name">Прізвище</label>
+          <input type="text" id="second-name" name="second-name" />
+          <label for="birthdate">Дата народження</label>
+          <input type="date" id="birthdate" name="birthdate" />
+          <fieldset>
+            <legend>Стать</legend>
+            <label><input type="radio" name="sex" value="man" />Чол</label>
+            <label><input type="radio" name="sex" value="woman" />Жін</label>
+          </fieldset>
+          <fieldset>
+            <legend>Хоббі:</legend>
+            <label
+              ><input type="checkbox" name="sport" value="sport" />Спорт</label
+            >
+            <label
+              ><input type="checkbox" name="games" value="games" />Ігри</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="camping"
+                value="camping"
+              />Кемпінг</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="drawing"
+                value="drawing"
+              />Малювання</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="dancing"
+                value="dancing"
+              />Танці</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="singing"
+                value="singing"
+              />Співи</label
+            >
+            <label
+              ><input type="checkbox" name="other" value="other" />Інше</label
+            >
+          </fieldset>
+          <label for="example">Ваше хоббі</label>
+          <textarea id="example" name="example" rows="6" cols="50"></textarea>
+          <fieldset>
+            <legend>Чи є домашній улюбленець?</legend>
+            <label><input type="radio" name="pet" value="yes" />Так</label>
+            <label><input type="radio" name="pet" value="no" />Ні</label>
+          </fieldset>
+          <fieldset>
+            <legend>Шкідливі звички</legend>
+            <label
+              ><input
+                type="radio"
+                name="bad-habits"
+                value="available"
+              />Наявні</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="bad-habits"
+                value="unavailable"
+              />Відсутні</label
+            >
+          </fieldset>
+          <label for="about-you">Короткий опис себе</label>
+          <textarea
+            id="about-you"
+            name="about-you"
+            rows="7"
+            cols="70"
+          ></textarea>
+          <label for="tel">Телефон:</label>
+          <input type="tel" id="tel" name="tel" placeholder="+380ххххххххх" />
+          <label for="mail">Пошта</label>
+          <input
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="example@mail.com"
+          />
+          <fieldset>
+            <legend>Умови</legend>
+            <label
+              ><input type="checkbox" name="conditions" value="conditions" />З
+              умовами сайту ознайомлений</label
+            >
+            <label
+              ><input type="checkbox" name="agree" value="agree" />Даю згоду на
+              відправку моїх данних</label
+            >
+          </fieldset>
+          <button type="submit">Відправити</button>
+          <button type="reset">Видалити</button>
+        </form>
+      </section>
+    </main>
+    <footer id="contact-us">
+      <h2 class="contacts">Зворотній зв'язок</h2>
+      <address>
+        <a href="mailto:acybula17@gmail.com">acybula17@gmail.com</a>
+        <a href="tel:+380682047947">+380682047947</a>
+      </address>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="site-navigation">
+          <li><a href="../index.html"> На головну</a></li>
+          <li><a href="page1.html">Реєстрація</a></li>
+          <li><a href="#contact-us">Зворотній зв'язок</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Приклад таблиць</h1>
+      <table>
+        <caption>
+          Прайс-лист
+        </caption>
+        <thead>
+          <tr>
+            <th>Назва товару</th>
+            <th>Категорія</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Загальна вартість</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sony Play Stantion 5</td>
+            <td>Ігрова консоль</td>
+            <td>35000</td>
+            <td>2</td>
+            <td>70000</td>
+          </tr>
+          <tr>
+            <td>Dualsense</td>
+            <td>Геймпад</td>
+            <td>3250</td>
+            <td>4</td>
+            <td>13000</td>
+          </tr>
+          <tr>
+            <td>Dualsense Edge</td>
+            <td>Геймпад</td>
+            <td>10000</td>
+            <td>6</td>
+            <td>60000</td>
+          </tr>
+          <tr>
+            <td>Lenovo Legion 25-10</td>
+            <td>Монітор</td>
+            <td>7800</td>
+            <td>3</td>
+            <td>23400</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="3">Разом</td>
+          <td>15</td>
+          <td>166400</td>
+        </tfoot>
+      </table>
+      <table>
+        <caption>
+          Категорії товарів
+        </caption>
+        <thead>
+          <th>Категорія</th>
+          <th>Товар</th>
+          <th>Кількість</th>
+          <th>Ціна</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Sony</td>
+            <td>Play Stantion 5</td>
+            <td>3</td>
+            <td>75000</td>
+          </tr>
+          <tr>
+            <td>Dualsense</td>
+            <td>2</td>
+            <td>7500</td>
+          </tr>
+          <tr>
+            <td>Pulse 3D</td>
+            <td>5</td>
+            <td>15800</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Apple</td>
+            <td>Iphone 17</td>
+            <td>2</td>
+            <td>95000</td>
+          </tr>
+          <tr>
+            <td>Airpods Max</td>
+            <td>3</td>
+            <td>40000</td>
+          </tr>
+          <tr>
+            <td>AirTag</td>
+            <td>1</td>
+            <td>3000</td>
+          </tr>
+          <tr>
+            <td>AirPods pro</td>
+            <td>2</td>
+            <td>16700</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>
+          Результати змагань
+        </caption>
+        <thead>
+          <th>Учасник</th>
+          <th colspan="2">Результати</th>
+          <th colspan="2">Підсумок</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2">Ім'я</th>
+            <th colspan="2">Біг</th>
+            <th>Стрибки</th>
+            <th rowspan="2">Бали</th>
+          </tr>
+          <tr>
+            <th>100м</th>
+            <th>1км</th>
+            <th>Довжина</th>
+          </tr>
+          <tr>
+            <td>Олександр</td>
+            <td>10,5с.</td>
+            <td>3хв. 45 сек.</td>
+            <td>3,2м</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <td>Ілля</td>
+            <td>11,3с.</td>
+            <td>3хв. 34с.</td>
+            <td>3,2м</td>
+            <td>72</td>
+          </tr>
+          <tr>
+            <td>Юлія</td>
+            <td>12с.</td>
+            <td>4хв. 5с.</td>
+            <td>2,7м.</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <td>Іван</td>
+            <td>10,9с.</td>
+            <td>3хв. 12с.</td>
+            <td>3,5м.</td>
+            <td>76</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer id="contact-us">
+      <h2>Зворотній зв'язок</h2>
+      <address>
+        <a href="mailto:acybula17@gmail.com">acybula17@gmail.com</a>
+        <a href="tel:+380682047947">+380682047947</a>
+      </address>
+    </footer>
+  </body>
+</html>

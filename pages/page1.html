@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Реєстрація</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
@@ -13,6 +17,7 @@
           <li>
             <a href="../index.html">На головну</a>
           </li>
+          <li><a href="tables.html">Таблиці</a></li>
           <li>
             <a href="#registration">Реєстрація</a>
           </li>
@@ -24,12 +29,18 @@
       <section id="registration">
         <h1>Реєстрація користувача</h1>
         <form>
-          <label for="first-name">Ім'я</label>
-          <input type="text" id="first-name" name="first-name" />
-          <label for="second-name">Прізвище</label>
-          <input type="text" id="second-name" name="second-name" />
-          <label for="birthdate">Дата народження</label>
-          <input type="date" id="birthdate" name="birthdate" />
+          <div class="first-name">
+            <label for="first-name">Ім'я</label>
+            <input type="text" id="first-name" name="first-name" />
+          </div>
+          <div class="second-name">
+            <label for="second-name">Прізвище</label>
+            <input type="text" id="second-name" name="second-name" />
+          </div>
+          <div>
+            <label for="birthdate">Дата народження</label>
+            <input type="date" id="birthdate" name="birthdate" />
+          </div>
           <fieldset>
             <legend>Стать</legend>
             <label><input type="radio" name="sex" value="man" />Чол</label>
@@ -106,15 +117,19 @@
             rows="7"
             cols="70"
           ></textarea>
-          <label for="tel">Телефон:</label>
-          <input type="tel" id="tel" name="tel" placeholder="+380ххххххххх" />
-          <label for="mail">Пошта</label>
-          <input
-            type="email"
-            id="mail"
-            name="mail"
-            placeholder="example@mail.com"
-          />
+          <div>
+            <label for="tel">Телефон:</label>
+            <input type="tel" id="tel" name="tel" placeholder="+380ххххххххх" />
+          </div>
+          <div>
+            <label for="mail">Пошта</label>
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="example@mail.com"
+            />
+          </div>
           <fieldset>
             <legend>Умови</legend>
             <label

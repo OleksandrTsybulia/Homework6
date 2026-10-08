@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Inter;
+  src: url(/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
 :root {
   --text-color: #696969;
   --heading-color-main: #2f4f4f;
@@ -5,6 +9,7 @@
 }
 body {
   background: linear-gradient(#d3d3d3 15%, #c0c0c0 85%);
+  font-family: Inter, sans-serif;
 }
 header {
   background-color: #808080;
@@ -17,9 +22,6 @@ header {
   font-size: 14px;
   list-style: none;
 }
-.site-navigation li:last-of-type {
-  font-style: italic;
-}
 h1,
 h2 {
   color: var(--heading-color-main);
@@ -28,14 +30,7 @@ h2 {
   font-weight: 700;
 }
 h1::after {
-  content: "✿";
-}
-h1::first-letter {
-  font-size: 30px;
-  color: var(--second-text-color);
-}
-.student-description::first-line {
-  color: #202020;
+  content: '✿';
 }
 p {
   color: var(--text-color);
@@ -45,41 +40,29 @@ p {
 a {
   text-decoration: none;
 }
-a:not(.valorant-site) {
-  color: #900000;
-}
 /*Цей селектор має найбільшу специфічність (1,0,1)*/
 #other-information > p {
   color: var(--second-text-color);
-}
-.hobby-description + p {
-  color: var(--heading-color-main);
 }
 .game-description {
   color: var(--text-color);
   font-size: 16px;
   list-style: none;
 }
-.game-description li:first-child {
-  color: #080808;
-}
-.game-description li:nth-child(2) {
-  color: #303030;
-}
-.game-description li:last-child {
-  color: #404040;
-}
 form {
   font-size: 18px;
   color: var(--text-color);
 }
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="date"] {
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='date'] {
   border: 2px solid #101010;
   border-radius: 4px;
   background-color: #a9a9a9;
+}
+.first-name {
+  color: #a07a40;
 }
 textarea {
   background-color: #a9a9a9;
@@ -103,4 +86,16 @@ footer {
 address {
   font-size: 14px;
   font-style: normal;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 2px, solid, black;
+}
+td {
+  text-align: right;
+}
+th {
+  text-align: center;
 }

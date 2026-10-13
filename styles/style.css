@@ -1,6 +1,7 @@
 @font-face {
   font-family: Inter;
   src: url(/Fonts/Inter-VariableFont_opsz\,wght.ttf);
+  font-display: swap;
 }
 :root {
   --text-color: #696969;
@@ -10,6 +11,19 @@
 body {
   background: linear-gradient(#d3d3d3 15%, #c0c0c0 85%);
   font-family: Inter, sans-serif;
+}
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #808080;
@@ -21,6 +35,8 @@ header {
 .site-navigation {
   font-size: 14px;
   list-style: none;
+  margin-right: 15px;
+  line-height: 20px;
 }
 h1,
 h2 {
@@ -28,6 +44,7 @@ h2 {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
+  margin: 15px 0 20px 0;
 }
 h1::after {
   content: '✿';
@@ -35,7 +52,7 @@ h1::after {
 p {
   color: var(--text-color);
   font-size: 16px;
-  line-height: 1.5;
+  margin-top: 10px;
 }
 a {
   text-decoration: none;
@@ -48,6 +65,10 @@ a {
   color: var(--text-color);
   font-size: 16px;
   list-style: none;
+  margin-left: 30px;
+}
+img {
+  margin: 10px 0 0 30px;
 }
 form {
   font-size: 18px;
@@ -91,11 +112,17 @@ table,
 th,
 td {
   border-collapse: collapse;
-  border: 2px, solid, black;
+  border: 2px solid black;
 }
 td {
   text-align: right;
 }
 th {
   text-align: center;
+}
+.no-border {
+  border-bottom: none;
+}
+.empty-column {
+  border-top: none;
 }

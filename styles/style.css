@@ -27,6 +27,14 @@ header {
   background-position: right top;
   background-size: 200px;
 }
+.up-link {
+  position: fixed;
+  left: 10px;
+  z-index: 999;
+}
+.header-link {
+  color: #808080;
+}
 .site-navigation {
   font-size: 14px;
   list-style: none;
@@ -55,14 +63,34 @@ a {
 #other-information > p {
   color: var(--second-text-color);
 }
+#hobby-information {
+  position: relative;
+}
 .game-description {
+  overflow: scroll;
+  width: 600px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.game-description_about {
+  border: 2px solid;
+  background-color: #808080;
+  position: sticky;
+  text-align: center;
+  top: 0;
+}
+.game-description_short {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 130px;
+  left: 800px;
+}
+.game-description_list {
   color: var(--text-color);
   font-size: 16px;
   list-style: none;
   line-height: 20px;
-  margin-bottom: 15px;
-}
-.game-logo {
   margin-bottom: 15px;
 }
 form {
